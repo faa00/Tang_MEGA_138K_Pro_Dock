@@ -18,8 +18,8 @@ IO_LOC "KEY[1]" F15;        //S1
 IO_LOC "KEY[2]" G15;        //S2
 
 //UART2
-IO_LOC "UART2_TXD" U16;     //1
-IO_LOC "UART2_RXD" V16;     //2
+IO_LOC "UART2_TXD" P15; //U16;     //1
+IO_LOC "UART2_RXD" N16; //V16;     //2
 
 //JTAG
 IO_LOC "TMS_IN"     W21;    //5  p4
