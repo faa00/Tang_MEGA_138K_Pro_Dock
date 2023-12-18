@@ -1,0 +1,62 @@
+[
+ {
+  "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+  "InstLine" : 3,
+  "InstName" : "ae350_demo_top",
+  "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "ae350_demo_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+    "InstLine" : 59,
+    "InstName" : "u_Gowin_PLL_AE350",
+    "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/gowin_pll_ae350/gowin_pll_ae350.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL_AE350"
+   },
+   {
+    "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+    "InstLine" : 76,
+    "InstName" : "u_Gowin_PLL_DDR3",
+    "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/gowin_pll_ddr3/gowin_pll_ddr3.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL_DDR3"
+   },
+   {
+    "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+    "InstLine" : 97,
+    "InstName" : "u_key_debounce_ddr3",
+    "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/key_debounce.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "key_debounce"
+   },
+   {
+    "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+    "InstLine" : 108,
+    "InstName" : "u_key_debounce_ae350",
+    "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/key_debounce.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "key_debounce"
+   },
+   {
+    "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/ae350_demo.v",
+    "InstLine" : 118,
+    "InstName" : "u_RiscV_AE350_SOC_Top",
+    "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/riscv_ae350_soc/riscv_ae350_soc.v",
+    "ModuleLine" : 28864,
+    "ModuleName" : "RiscV_AE350_SOC_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/riscv_ae350_soc/riscv_ae350_soc.v",
+      "InstLine" : 29275,
+      "InstName" : "u_RiscV_AE350_SOC",
+      "ModuleFile" : "F:/EMB_pub/embedded/risc_v/ae350_soc/ref_design/1.1/FPGA_RefDesign/Tang_MEGA_138K_Pro_Dock/ae350_demo/src/riscv_ae350_soc/riscv_ae350_soc.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "RiscV_AE350_SOC"
+     }
+    ]
+   }
+  ]
+ }
+]
