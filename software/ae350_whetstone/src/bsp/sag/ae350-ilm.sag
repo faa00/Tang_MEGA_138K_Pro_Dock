@@ -1,0 +1,35 @@
+USER_SECTIONS	.bootloader
+USER_SECTIONS	.loader
+USER_SECTIONS	.vector_table
+
+HEAD 0xA0000000				; ILM base
+{
+	BOOTLOADER 0x80000000
+	{
+		ADDR __flash_start
+		* KEEP ( .bootloader )
+	}
+}
+
+LDSECTION +0 ALIGN 8
+{
+	LOADER 0xA000FC00		; 63KB
+	{
+		LOADADDR NEXT __loader_lmastart
+		ADDR NEXT __loader_start
+		* KEEP ( .loader )
+		LOADADDR __loader_lmaend
+	}
+}
+
+MEM +0 ALIGN 256
+{
+	RAM 0xA0000000			; Local memory (ILM/DLM) base
+	{
+		LOADADDR NEXT __text_lmastart
+		ADDR NEXT __text_start
+		* ( .vector_table )
+		* ( +ISR , +RO , +RW , +ZI )
+		STACK = 0xA0208000	; DLM initial stack pointer
+	}
+}
