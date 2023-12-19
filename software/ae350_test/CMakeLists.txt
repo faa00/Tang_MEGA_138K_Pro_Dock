@@ -37,10 +37,7 @@ set(SIZE ${RISCV_TOOLCHAIN}size)
 
 SET(CMAKE_ASM_FLAGS "${CFLAGS} -x assembler-with-cpp")
 
-## add_definitions(-DMCU_STARTUP_FLASH_B91=1)
-
-## add_compile_options( -Og -g3 -mcpu=a25 -mabi=${RISC_ABI} -mcmodel=medium)
-add_compile_options( -Og -g3 -mcpu=a25 -mcmodel=medium)
+add_compile_options( -Og -g3 -mcpu=a25 -mabi=${RISC_ABI} -mcmodel=medium)
 add_compile_options( -ffunction-sections -fdata-sections)
 ## -fpack-struct -fshort-enums)
 add_compile_options( -c -fmessage-length=0 -fno-builtin -fomit-frame-pointer -fno-strict-aliasing)
@@ -48,7 +45,6 @@ add_compile_options( -Wall)
 #add_compile_options(-Wall -Wno-nonnull-compare -Wextra -Wshadow -Werror -Wno-gnu-zero-variadic-macro-arguments)
 
 set(LINKER_SCRIPT "ae350-ddr.ld")
-#
 #
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Og -nostartfiles -static -Wl,--gc-sections")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -T ${AE350_GOWIN_SDK}/bsp/sag/${LINKER_SCRIPT}")
