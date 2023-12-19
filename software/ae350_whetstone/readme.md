@@ -1,7 +1,7 @@
-#Single Precision C Whetstone Benchmark 
+### Single Precision C Whetstone Benchmark 
 
 Calibrate
-
+```
        0.02 Seconds          1   Passes (x 100)
 
        0.08 Seconds          5   Passes (x 100)
@@ -9,11 +9,11 @@ Calibrate
        0.40 Seconds         25   Passes (x 100)
 
        2.00 Seconds        125   Passes (x 100)
-
+```
 Use 624  passes (x 100)
 
-#          Single Precision C/C++ Whetstone Benchmark
-
+###          Single Precision C/C++ Whetstone Benchmark
+```
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
 N1 floating point     -1.12475013732910156       177.776              0.067
@@ -33,6 +33,6 @@ N7 assignments         3.00000000000000000                 479.988    0.240
 N8 exp,sqrt etc.       0.75110614299774170                   7.023    3.305
 
 MWIPS                                            622.382             10.026
-
+```
 
 MWIPS/MHz                                          0.778
