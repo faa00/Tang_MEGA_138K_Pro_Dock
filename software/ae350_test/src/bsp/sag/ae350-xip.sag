@@ -1,0 +1,21 @@
+USER_SECTIONS	.vector_table
+
+EXEC 0x80000000
+{
+	FLASH 0x80000000
+	{
+		* ( +ISR , +RO )
+	}
+}
+
+DATA +0 ALIGN 32
+{
+	RAM 0x00000000
+	{
+		LOADADDR NEXT __data_lmastart
+		ADDR NEXT __data_start
+		* ( .vector_table )
+		* ( +RW , +ZI )
+		STACK = 0x08000000
+	}
+}

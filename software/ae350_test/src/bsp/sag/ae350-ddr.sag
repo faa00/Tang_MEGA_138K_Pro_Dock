@@ -1,0 +1,35 @@
+USER_SECTIONS	.bootloader
+USER_SECTIONS	.loader
+USER_SECTIONS	.vector_table
+
+HEAD 0x00000000				; DDR base
+{
+	BOOTLOADER 0x80000000
+	{
+		ADDR __flash_start
+		* KEEP ( .bootloader )
+	}
+}
+
+LDSECTION +0 ALIGN 8
+{
+	LOADER 0x0FF00000		; 255MB based on DDR size
+	{
+		LOADADDR NEXT __loader_lmastart
+		ADDR NEXT __loader_start
+		* KEEP ( .loader )
+		LOADADDR __loader_lmaend
+	}
+}
+
+MEM +0 ALIGN 256
+{
+	RAM 0x00000000			; DDR base
+	{
+		LOADADDR NEXT __text_lmastart
+		ADDR NEXT __text_start
+		* ( .vector_table )
+		* ( +ISR , +RO , +RW , +ZI )
+		STACK = 0x08000000	; DDR initial stack pointer
+	}
+}
