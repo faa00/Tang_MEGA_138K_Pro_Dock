@@ -1,3 +1,4 @@
+```
 Execution starts, 10000000 runs through Dhrystone
 Execution ends
 
@@ -52,5 +53,5 @@ Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
 
 Microseconds for one run through Dhrystone :    0.4
 Dhrystones per Second : 2416843.5
-
+```
 DMIPS per MHz : 1.72
