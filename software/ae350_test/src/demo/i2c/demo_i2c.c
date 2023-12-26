@@ -215,7 +215,7 @@ int i2c_master_mode(void)
 	int32_t status = 0, i = 0;
 
 	// Initializes UART
-	uart_init(38400);	// Baud rate is 38400
+	uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a I2C Master Mode demo.\r\n");
 	printf("\r\n====Please hardwire 2 test board=====\r\n\r\n");
@@ -447,7 +447,7 @@ int i2c_slave_mode(void)
 	int32_t status = 0;
 
 	// Initializes UART
-	uart_init(38400);	// Baud rate is 38400
+	uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a I2C Slave Mode demo.\r\n");
 	printf("\r\n====Please hardwire 2 test board=====\r\n\r\n");

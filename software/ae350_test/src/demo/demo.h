@@ -15,12 +15,13 @@
 extern "C" {
 #endif
 
+#define UART_SPEED	115200
 
 // Definitions ------------------------------------------------------------------------------
 // Control demo
 // External peripherals demo
 #define RUN_DEMO_GPIO			0	// Run GPIO demo
-#define RUN_DEMO_UART			0	// Run UART demo
+#define RUN_DEMO_UART			1	// Run UART demo
 #define RUN_DEMO_I2C			0	// Run I2C demo
 #define RUN_DEMO_PWM			0	// Run PWM demo
 #define RUN_DEMO_RTC			0	// Run RTC demo

@@ -75,7 +75,7 @@ void trigger_mswi(void);
 int demo_plmt(void)
 {
 	// Initializes UART
-	uart_init(38400);		// Baud rate is 38400
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a Platform Level Machine Timer demo.\r\n\r\n");
 

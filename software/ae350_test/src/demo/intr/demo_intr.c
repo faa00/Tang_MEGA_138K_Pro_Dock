@@ -140,7 +140,7 @@ static void setup_gpio(void)
 int demo_intr(void)
 {
 	// Initializes UART
-	uart_init(38400);	// Baud rate is 38400
+	uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a Multiple Peripherals Interrupts demo.\r\n\r\n");
 

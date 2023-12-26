@@ -98,19 +98,22 @@ int demo_uart(void)
     /* Power up the UART peripheral */
     UARTdrv->PowerControl(AE350_POWER_FULL);
 
-    /* Configure the UART to 38400 Bits/second */
+    /* Configure the UART to UART_SPEED Bits/second */
     UARTdrv->Control(AE350_UART_MODE_ASYNCHRONOUS |			// Mode			: asynchronous
     				 AE350_UART_DATA_BITS_8 |				// Data bits	: 8-bit
 					 AE350_UART_PARITY_NONE |				// Parity		: none
 					 AE350_UART_STOP_BITS_1 |				// Stop bit:    : 1-bit
-					 AE350_UART_FLOW_CONTROL_NONE, 115200);	// Flow control : none
-    														// Baud rate    : 38400
+					 AE350_UART_FLOW_CONTROL_NONE, UART_SPEED);	// Flow control : none
+    														// Baud rate    : UART_SPEED
 
     /* Enable Receiver and Transmitter lines */
     UARTdrv->Control (AE350_UART_CONTROL_TX, 1);			// Transmit
     UARTdrv->Control (AE350_UART_CONTROL_RX, 1);			// Received
 
-    UARTdrv->Send("\r\nPress Enter to receive a message", 34);
+    UARTdrv->Send("\r\nPress 'G' to receive a message", 33);
+    wait_complete();
+
+    UARTdrv->Send("\r\nPress Any others key to exit()", 33);
     wait_complete();
 
     // Press character "Enter"
@@ -125,6 +128,11 @@ int demo_uart(void)
         	UARTdrv->Send("\r\nHello World!", 14);
         	wait_complete();
         }
+        else
+        {
+    	    break;
+        }
+        
     }
 
     return 0;

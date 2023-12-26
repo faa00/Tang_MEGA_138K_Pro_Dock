@@ -66,7 +66,7 @@ int demo_led(void)
 	long use_time = 0;
 
 	// Initializes UART
-	uart_init(115200);		// Baud rate is 115200
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a Waterfall Led demo.\r\n\r\n");
 

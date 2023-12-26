@@ -181,7 +181,7 @@ int demo_rtc(void)
     AE350_RTC_ALARM       rRTC_Alarm = {0,0,0};
 
     // Initializes UART
-    uart_init(38400);	// Baud rate is 38400
+    uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
     printf("\r\nIt's a Real Time Clock demo.\r\n\r\n");
 

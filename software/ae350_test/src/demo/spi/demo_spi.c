@@ -124,7 +124,7 @@ int spi_master_mode (void)
 	AE350_DRIVER_SPI *SPI_Dri = &Driver_SPI;
 
 	// Initializes UART
-	uart_init(38400);	// Baud rate is 38400
+	uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a SPI Master Mode demo.\r\n");
 	printf("\r\n====Please hardwire 2 test board=====\r\n\r\n");
@@ -195,7 +195,7 @@ int spi_slave_mode (void)
 	AE350_DRIVER_SPI *SPI_Dri = &Driver_SPI;
 
 	// Initializes UART
-    uart_init(38400);	// Baud rate is 38400
+    uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a SPI Slave Mode demo.\r\n");
 	printf("\r\n====Please hardwire 2 test board=====\r\n\r\n");

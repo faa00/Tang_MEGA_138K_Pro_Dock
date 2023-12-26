@@ -115,7 +115,7 @@ int demo_hsp(void)
 	extern long _stack;
 
 	// Initializes UART
-	uart_init(38400);		// Baud rate is 38400
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a Hardware Stack Protection and Recording Mechanism demo.\r\n");
 

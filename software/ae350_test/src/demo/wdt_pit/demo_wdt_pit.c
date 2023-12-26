@@ -96,7 +96,7 @@ int demo_wdt_and_pit(void)
     drv_capabilities = WDTdrv->GetCapabilities();
 
     // Initializes UART
-    uart_init(38400);	// Baud rate is 38400
+    uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
     // Initializes PIT as simple timer
     PITdrv->Initialize();

@@ -132,7 +132,7 @@ int demo_gpio(void)
 	AE350_DRIVER_GPIO *GPIO_Dri = &Driver_GPIO;
 
 	// Initializes UART
-	uart_init(38400);	// Baudrate is 38400
+	uart_init(UART_SPEED);	// Baudrate is UART_SPEED
 
 	printf("\r\nIt's a GPIO 7-Segments and Switches demo.\r\n");
 

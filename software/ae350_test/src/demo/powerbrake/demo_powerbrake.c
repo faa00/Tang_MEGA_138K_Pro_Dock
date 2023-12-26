@@ -186,7 +186,7 @@ static void trigger_mswi(void)
 int demo_powerbrake(void)
 {
 	// Initializes UART
-	uart_init(38400);		// Baud rate is 38400
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a Hardware Performance Throttling Mechanism demo.\r\n");
 

@@ -41,7 +41,7 @@ int demo_printf(void)
 	char buf[80];
 
 	/* Initializes UART */
-	uart_init(38400);		// Baud rate is 38400
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	mi = (1 << (bs-1)) + 1;
 

@@ -104,7 +104,7 @@ int demo_pfm(void)
 	volatile int sequence = 100;    // Prevent optimize repeated 'factorial' function calls
 
 	// Initializes UART
-	uart_init(38400);		// Baud rate is 38400
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a Hardware Performance Monitor demo.\r\n");
 

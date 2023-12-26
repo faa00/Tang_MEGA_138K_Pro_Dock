@@ -69,7 +69,7 @@ int demo_idlm(void)
 	int i;
 
 	// Initializes UART
-	uart_init(38400);		// Baud rate is 38400
+	uart_init(UART_SPEED);		// Baud rate is UART_SPEED
 
 	printf("\r\nIt's a ILM/DLM Access by Slave Port demo.\r\n\r\n");
 

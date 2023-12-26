@@ -67,7 +67,7 @@ int demo_pwm(void)
     char note;
 
     /* Initializes UART */
-    uart_init(38400);	// Baud rate is 38400
+    uart_init(UART_SPEED);	// Baud rate is UART_SPEED
 
     printf("\r\nIt's a Pulse Width Modulator demo.\r\n\r\n");
 
